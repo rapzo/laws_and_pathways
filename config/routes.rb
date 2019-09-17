@@ -10,7 +10,11 @@ Rails.application.routes.draw do
       get :companies_emissions
     end
   end
+
   resources :companies, only: [:show]
+
+  # development only elements and components list
+  get '/sandbox', to: 'sandbox#index' if Rails.env.development?
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
