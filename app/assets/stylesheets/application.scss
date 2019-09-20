@@ -1,4 +1,41 @@
-@import 'bulma/bulma';
+@charset "utf-8";
 
-@import 'app/typography';
-@import 'app/buttons';
+// Import a Google Font
+// @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+@import "app/variables";
+@import "app/typography";
+@import "app/buttons";
+
+// Import only what you need from Bulma
+// @import "bulma/sass/utilities/all";
+// @import "bulma/sass/base/all";
+// @import "bulma/sass/elements/button";
+// @import "bulma/sass/elements/container";
+// @import "bulma/sass/elements/title";
+// @import "bulma/sass/form/all";
+// @import "bulma/sass/components/navbar";
+// @import "bulma/sass/layout/hero";
+// @import "bulma/sass/layout/section";
+
+@import "bulma/bulma";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
+}
+
+container-columns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.chart {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}

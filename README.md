@@ -29,7 +29,7 @@ On the project's root run `bundle install`.
 
 ### Run the server
 
-`yarn start'` and access the project on `http://localhost:3000`
+`yarn start` and access the project on `http://localhost:3000`
 
 ### Run the tests
 
@@ -37,7 +37,12 @@ On the project's root run `bundle install`.
 
 ## Docker
 
-TODO
+There's a `docker-compose.yml` file that boots a container with postgresql server and adminer (a cheap tool to inspect the database).
+The database folder in the container is mapped to `./tmp/db` in order to persist data despite the container status.
+
+- `docker-compose up` should be enough to bring it up
+- `docker-compose down` to stop
+
 
 ## Configuration
 
